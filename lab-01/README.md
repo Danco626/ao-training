@@ -1,16 +1,3 @@
----
-section: exercises
-classes: topic-page
-description: Auth0 digital identity Lab 1: Web Sign-In
-topics:
-  - digital identity
-  - OIDC
-  - OpenId Connect
-  - OAuth2
-contentType:
-  - index
-  - concept
----
 # Lab 1: Web Sign-In
 
 This lab covers the process for adding sign-in to a basic Node.js application. This lab is the same exercise we provide for new employees in a technical role here at Auth0.
@@ -22,7 +9,28 @@ The Node OIDC npm package that this lab uses has not been tested, licensed, or o
 
 ## What You'll Need
 
-<%= include('../identity_labs/_includes/_what-you-need') %>
+**Node environment** - Install [Node.js](https://nodejs.org) directly or using [Homebrew](https://formulae.brew.sh/formula/node) or [NVM](https://github.com/nvm-sh/nvm) on a Mac. The labs were tested on Node.js v10.15.0 and NPM 6.4.1 (though they may work in other versions as well).
+
+---
+
+**An Auth0 account** - Sign up for a free Auth0 account [here](https://auth0.com/signup). We recommend starting with a new, empty tenant that can be deleted when you have completed the exercises. If you're using an existing test or dev tenant, make sure that all Rules are turned **off** and MFA is turned **off**.
+
+---
+
+**An Auth0 database user** - Use a new username/email and password user in a test database connection instead of a social, enterprise, or passwordless login. While social logins might work, using development keys can cause the labs to run differently. Choose a simple password that's easy to type as you will be logging in and out multiple times. You can use the same user across all of the labs.
+
+---
+
+**A web browser** - This lab was built and tested using Google Chrome; Safari, Firefox, and Edge should all work fine as well. Disable any active ad blockers used for the domain of your local site, as well as for the Auth0 domain from your tenant.
+
+---
+
+**The Identity Labs Git repo** - All the code you need to start, as well as the completed exercise for guidance, is located [here](https://github.com/auth0/identity-102-exercises). You need to clone that repo just once for all four labs. Use the correct folder relative to the lab you are working on. All file references in this lab are relative to `/begin` unless otherwise indicated. An `/end` folder is included as well to help with troubleshooting and compare your work with a working sample.
+
+---
+
+**For macOS users** - If you are new to macOS, check [these quick tips](https://blogs.mulesoft.com/dev/newbie/quick-tips-for-developers-new-to-mac/) for developers new to Mac. Make sure you allow the display of hidden files and become familiar with running basic commands in the terminal.
+
 
 ---
 
@@ -32,7 +40,7 @@ The Node OIDC npm package that this lab uses has not been tested, licensed, or o
 # Lab 1, Exercise 1: Adding Web Sign-In
 
 ::: warning
-If you came to this page directly, go to the [first page of this lab](/identity-labs/01-web-sign-in) and read through the instructions before getting started.
+If you came to this page directly, go to the first page of this lab and read through the instructions before getting started.
 :::
 
 In this exercise, you will learn how to add sign-in to an app using:
@@ -41,34 +49,12 @@ In this exercise, you will learn how to add sign-in to an app using:
 - An Express middleware to handle checking authentication and redirecting to login
 - Auth0 as an Authorization Server
 
-<div>
-  <div>
-    <ul class="nav nav-tabs">
-      <li class="active">
-        <a href="#video-tutorial" data-toggle="tab">
-          Video Tutorial
-        </a>
-      </li>
-      <li>
-        <a href="#text-tutorial" data-toggle="tab">
-          Lab
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="tab-content">
-    <div id="video-tutorial" class="tab-pane active">
-      <div class="video-wrapper" data-video="0divx974tx"></div>
-      <hr>
-    </div>
-    <div id="text-tutorial" class="tab-pane">
-
 A simple Node.js Express application has been created to get you started. This is a web application with two pages. The first page, served under the root path `/`, shows “Hello World” and a link (“Expenses”) to the second page. The second page, served at `/expenses`, shows a table with expenses. At this point, these expenses are hard-coded; you will learn how to consume them from an API secured with Auth0 in the next lab.
 
-1. Open your Terminal app, clone the [identity exercise repo](https://github.com/auth0/identity-102-exercises/), then go to the `/lab-01/begin` folder:
+1. Open your Terminal app, clone the identity exercise repo, then go to the `/lab-01/begin` folder:
 
 ```bash
-❯ git clone https://github.com/auth0/identity-102-exercises.git
+❯ git clone https://github.com/Danco626/ao-training
 Cloning into 'identity-102-exercises'...
 
 ❯ cd identity-102-exercises/lab-01/begin
@@ -220,31 +206,10 @@ listening on http://localhost:3000
 # Lab 1, Exercise 2: Using Network Traces
 
 ::: warning
-If you came to this page directly, go to the [first page of this lab](/identity-labs/01-web-sign-in) and read through the instructions before getting started.
+If you came to this page directly, go to the first page of this lab and read through the instructions before getting started.
 :::
 
 In this exercise, you will sign up for your application (which will also log you in) while exploring some of the relevant network traces of the authentication process.
-
-<div>
-  <div>
-    <ul class="nav nav-tabs">
-      <li class="active">
-        <a href="#video-tutorial" data-toggle="tab">
-          Video Tutorial
-        </a>
-      </li>
-      <li>
-        <a href="#text-tutorial" data-toggle="tab">
-          Lab
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="tab-content">
-    <div id="video-tutorial" class="tab-pane active">
-      <div class="video-wrapper" data-video="7tqnyttxfb"></div>
-    </div>
-    <div id="text-tutorial" class="tab-pane">
 
 1. Using Chrome, open **Developer Tools**. Switch to the **Network** tab then open your local application. You should immediately be redirected to Auth0 to login.
 
