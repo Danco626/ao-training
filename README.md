@@ -59,15 +59,15 @@ This line shows sample output; read but don't use.
 
 <ul class="topic-links">
   <li>
-    <i class="icon icon-budicon-529"></i><a href="tree/main/lab-01"> Lab 1: Web Sign-In</a>
+    <i class="icon icon-budicon-529"></i><a href="../../tree/main/lab-01"> Lab 1: Web Sign-In</a>
   </li>
   <li>
-    <i class="icon icon-budicon-529"></i><a href="tree/main/lab-02"> Lab 2: Calling an API</a>
+    <i class="icon icon-budicon-529"></i><a href="../../tree/main/lab-02"> Lab 2: Calling an API</a>
   </li>
   <li>
-    <i class="icon icon-budicon-529"></i><a href="tree/main/lab-03"> Lab 3: Mobile Application</a>
+    <i class="icon icon-budicon-529"></i><a href="../../tree/main/lab-03"> Lab 3: Mobile Application</a>
   </li>
   <li>
-    <i class="icon icon-budicon-529"></i><a href="tree/main/lab-04"> Lab 4: Single-Page Application</a>
+    <i class="icon icon-budicon-529"></i><a href="../../tree/main/lab-04"> Lab 4: Single-Page Application</a>
   </li>
 </ul>
