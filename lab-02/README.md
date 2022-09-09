@@ -8,8 +8,6 @@ The Node OIDC and bearer token npm packages that this lab uses has not been test
 
 ## Prerequisites
 
-- Read the introduction on the [main Identity Labs page](/labs/)
-- Watch the [Calling an API video](/videos/learn-identity/04-calling-an-api)
 - Read [Using Express Middleware](https://expressjs.com/en/guide/using-middleware.html) (optional)
 - Read [Beginner's Guide to Using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) (optional)
 
@@ -51,31 +49,8 @@ If you came to this page directly, go to the [first page of this lab](/identity-
 
 After learning how to secure your web application with Auth0 in [lab 1](/identity-labs/01-web-sign-in), you will now learn how to make this application consume APIs on behalf of your users. You will start by running an unsecured API and a web application to see both working together, and then you will secure your API with Auth0.
 
-<div>
-  <div>
-    <ul class="nav nav-tabs">
-      <li class="active">
-        <a href="#video-tutorial" data-toggle="tab">
-          Video Tutorial
-        </a>
-      </li>
-      <li>
-        <a href="#text-tutorial" data-toggle="tab">
-          Lab
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="tab-content">
-    <div id="video-tutorial" class="tab-pane active">
-      <div class="video-wrapper" data-video="ucdc0nohs4"></div>
-      <hr>
-      <div class="video-wrapper" data-video="xjimnp9iqt"></div>
-      <hr>
-    </div>
-    <div id="text-tutorial" class="tab-pane">
 
-1. Open a new terminal and browse to `/lab-02/begin/api` in your locally-cloned copy of the [identity exercise repo](https://github.com/auth0/identity-102-exercises/). This is where the code for your API resides. The API is an Express backend that contains a single endpoint. This endpoint (served under the root path) returns expenses, which are data that belong to each user (though they are static and the same for all).
+1. Open a new terminal and browse to `/lab-02/begin/api` in your locally-cloned copy of the identity exercise repo. This is where the code for your API resides. The API is an Express backend that contains a single endpoint. This endpoint (served under the root path) returns expenses, which are data that belong to each user (though they are static and the same for all).
 
 <%= include('../_includes/_git-clone-note') %>
 

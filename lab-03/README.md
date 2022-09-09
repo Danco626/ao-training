@@ -2,8 +2,6 @@
 
 ## Prerequisites
 
-- Read the introduction on the [main Identity Labs page](/labs/)
-- Watch the [Desktop and Mobile Apps video](/videos/learn-identity/05-desktop-and-mobile-apps)
 - Apple's [Developing iOS Apps: Build a Basic UI](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html) tutorial to get a feeling of the Xcode's UI (optional)
 
 ## What You'll Need
@@ -36,45 +34,18 @@
 
 ---
 
-**The Identity Labs Git repo** - All the code you need to start, as well as the completed exercise for guidance, is located [here](https://github.com/auth0/identity-102-exercises). You need to clone that repo just once for all four labs. Use the correct folder relative to the lab you are working on. All file references in this lab are relative to `/begin` unless otherwise indicated. An `/end` folder is included as well to help with troubleshooting and compare your work with a working sample.
-
----
-
 **For macOS users** - If you are new to macOS, check [these quick tips](https://blogs.mulesoft.com/dev/newbie/quick-tips-for-developers-new-to-mac/) for developers new to Mac. Make sure you allow the display of hidden files and become familiar with running basic commands in the terminal.
 
 # Lab 3, Exercise 1: Adding Authentication
 
 ::: warning
-If you came to this page directly, go to the [first page of this lab](/identity-labs/03-mobile-native-app) and read through the instructions before getting started.
+If you came to this page directly, go to the first page of this lab and read through the instructions before getting started.
 :::
 
 In this exercise, you will add authentication to an existing iOS application. A simple iOS application has been provided to get you started. This is a single-view application with a button to launch the Auth0 authentication process.
 
-<div>
-  <div>
-    <ul class="nav nav-tabs">
-      <li class="active">
-        <a href="#video-tutorial" data-toggle="tab">
-          Video Tutorial
-        </a>
-      </li>
-      <li>
-        <a href="#text-tutorial" data-toggle="tab">
-          Lab
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="tab-content">
-    <div id="video-tutorial" class="tab-pane active">
-      <div class="video-wrapper" data-video="qt3p9kdk2c"></div>
-      <hr>
-      <div class="video-wrapper" data-video="98q7d16ieg"></div>
-      <hr>
-    </div>
-    <div id="text-tutorial" class="tab-pane">
 
-1. Launch Xcode, go to **File > Open**, and open `/lab-03/exercise-01/begin/exercise-01.xcworkspace` in your locally-cloned copy of the [identity exercise repo](https://github.com/auth0/identity-102-exercises/).
+1. Launch Xcode, go to **File > Open**, and open `/lab-03/exercise-01/begin/exercise-01.xcworkspace` in your locally-cloned copy of the identity exercise repo.
 
 <%= include('../_includes/_git-clone-note') %>
 
