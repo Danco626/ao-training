@@ -1,14 +1,3 @@
----
-section: exercises
-description: Auth0 digital identity labs
-topics:
-  - digital identity
-  - OIDC
-  - OpenId Connect
-  - OAuth2
-contentType:
-    - index
----
 # Auth0 Identity Labs
 
 <i class="icon icon-budicon-529"></i> **Welcome to the home for Auth0's digital identity labs!** These exercises serve as a learning tool to be combined with our [Learn Identity video series](/videos/learn-identity). Each lab is meant to be completed once a video (or series of videos) is complete.
