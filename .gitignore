@@ -88,3 +88,75 @@ typings/
 
 # mac files
 .DS_Store
+
+
+
+
+
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+lab-05-ReactNative/*/build/
+lab-05-ReactNative/*/*.pbxuser
+lab-05-ReactNative/*/!default.pbxuser
+lab-05-ReactNative/*/*.mode1v3
+lab-05-ReactNative/*/!default.mode1v3
+lab-05-ReactNative/*/*.mode2v3
+lab-05-ReactNative/*/!default.mode2v3
+lab-05-ReactNative/*/*.perspectivev3
+lab-05-ReactNative/*/!default.perspectivev3
+lab-05-ReactNative/*/xcuserdata
+lab-05-ReactNative/*/*.xccheckout
+lab-05-ReactNative/*/*.moved-aside
+lab-05-ReactNative/*/DerivedData
+lab-05-ReactNative/*/*.hmap
+lab-05-ReactNative/*/*.ipa
+lab-05-ReactNative/*/*.xcuserstate
+
+# Android/IntelliJ
+#
+lab-05-ReactNative/*/build/
+lab-05-ReactNative/*/.idea
+lab-05-ReactNative/*/.gradle
+lab-05-ReactNative/*/local.properties
+lab-05-ReactNative/*/*.iml
+lab-05-ReactNative/*/*.hprof
+
+# node.js
+#
+lab-05-ReactNative/*/node_modules/
+lab-05-ReactNative/*/npm-debug.log
+lab-05-ReactNative/*/yarn-error.log
+lab-05-ReactNative/*/package-lock.json
+lab-05-ReactNative/*/yarn.lock
+
+# BUCK
+lab-05-ReactNative/*/buck-out/
+lab-05-ReactNative/*/\.buckd/
+lab-05-ReactNative/*/*.keystore
+lab-05-ReactNative/*/!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+lab-05-ReactNative/*/*/fastlane/report.xml
+lab-05-ReactNative/*/*/fastlane/Preview.html
+lab-05-ReactNative/*/*/fastlane/screenshots
+
+# Bundle artifact
+lab-05-ReactNative/*/*.jsbundle
+
+# Ruby / CocoaPods
+lab-05-ReactNative/*/ios/Pods/
+lab-05-ReactNative/*/ios/Podfile.lock
+lab-05-ReactNative/*/vendor/bundle/
+
+# Auth0 configuration file
+lab-05-ReactNative/*/app/auth0-configuration.js
